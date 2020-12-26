@@ -32,5 +32,16 @@ $(document).ready(function(){
         $("#in-game").show();
     });
 
+    // on click for the player action buttons
+    $("#player-moves button").on("click",function(){
+        var action = $(this).text();
+        var current = action[5];
+        var destination = action[10];
+        var topDisk = $("#box-"+current+" div").first();
+        console.log(topDisk);
+        $("#box-"+current).remove(topDisk);
+        $("#box-"+destination).prepend(topDisk);
+    });
+
 
 });

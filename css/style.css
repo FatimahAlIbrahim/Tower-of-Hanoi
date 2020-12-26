@@ -49,6 +49,9 @@ button {
     border-top: none;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #player-moves {
@@ -80,25 +83,26 @@ button {
 
 .disk1 {
     background-color: rgb(255, 45, 45);
-    margin: auto;
+    margin: 0em auto 0em auto;
+    align-items: flex-end;
 }
 
 .disk2 {
     background-color: orange;
-    margin: auto;
+    margin: 0em auto 0em auto;
 }
 
 .disk3 {
     background-color: rgb(224, 224, 41);
-    margin: auto;
+    margin: 0em auto 0em auto;
 }
 
 .disk4 {
     background-color: rgb(23, 197, 23);
-    margin: auto;
+    margin: 0em auto 0em auto;
 }
 
 .disk5 {
     background-color: rgb(86, 86, 252);
-    margin: auto;
+    margin: 0em auto 0em auto;
 }
