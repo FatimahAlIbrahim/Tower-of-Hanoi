@@ -1,0 +1,98 @@
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(250, 250, 250);
+    border: groove;
+    border-radius: 0.5em;
+}
+
+#game-container {
+    margin: 3em auto 3em auto;
+    width: 70%;
+    padding: 1em;
+    border: solid lightgray;
+}
+
+#in-game {
+    display: none;
+}
+
+#mode-selection{
+    text-align: center;
+    margin: 4em 0em 4em 0em;
+}
+
+
+#game {
+    border: solid gray;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto auto;
+    text-align: center;
+    padding: 5em 2em 0.5em 2em;
+    gap: 0.7em;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+#box-A, #box-B, #box-C {
+    height: 10em;
+    border: solid rgb(105, 105, 105);
+    border-top: none;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+#player-moves {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#settings {
+    text-align: center;
+    margin-top: 3em;
+}
+
+#rules {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    list-style: inside;
+}
+
+#rules li {
+    text-align: justify;
+}
+
+.selected-mode {
+    background-color: lightgray;
+}
+
+.disk1 {
+    background-color: red;
+}
+
+.disk2 {
+    background-color: orange;
+}
+
+.disk3 {
+    background-color: yellow;
+}
+
+.disk4 {
+    background-color: green;
+}
+
+.disk5 {
+    background-color: blue;
+}

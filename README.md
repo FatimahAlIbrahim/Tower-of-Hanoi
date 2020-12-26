@@ -15,13 +15,16 @@ Tower of Hanoi game using html, CSS, and JavaScript.
 * As a player, I want to be able to know the number of moves I took to complete the game, so that I can assess my play.
 * As a player, I want to be able to know how long I took to complete the game, so that I can assess my play.
 * As a player, I want to be able to restart the game, so that I restart it whenever I need to.
-* As a player, I want to be able to change the game mode during play time, so that I choose another mode if I changed my mind or Chose a wrong mode by mistake.
+* As a player, I want to be able to change the game mode during play time, so that I choose another mode if I changed my mind or chose a wrong mode by mistake.
 * As a player, I want to be able to see the game rules all the time, so that I can view them whenever I forget anything.
 
 ## Development process and problem-solving strategy
+### Development process
 1. Created the html, CSS, and JavaScript files.
 1. Created a wireframe for the website using [wireframe.cc](https://wireframe.cc/).
 1. Created the user stories based on the wireframe.
+1. Added the initial html and CSS code.
+### Problem-solving strategy
 
 
 ## Unsolved problems

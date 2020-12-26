@@ -7,6 +7,50 @@
     <title>Tower of Hanoi</title>
 </head>
 <body>
+    <div id="game-container">
+        <h1>Tower of Hanoi</h1>
+
+        <div id="mode-selection">
+            <span>Game Mode:</span>
+            <button>3 disks</button>
+            <button>4 Disks</button>
+            <button>5 Disks</button>
+            <button>Play</button>
+        </div>
+
+        <div id="in-game">
+                <p>Number of Moves: <span id="number-of-moves">0</span> Timer: <span id="timer">0.0</span></p>
+                <div id = "game">
+                    <div id = "box-A"></div>
+                    <div id = "box-B"></div>
+                    <div id = "box-C"></div>
+                    <p>A</p>
+                    <p>B</p>
+                    <p>C</p>
+                </div>
+                <div id="player-moves">
+                    <span>Player Moves:</span>
+                    <button>From <span>A</span> to <span>B</span></button>
+                    <button>From <span>A</span> to <span>C</span></button>
+                    <button>From <span>B</span> to <span>A</span></button>
+                    <button>From <span>B</span> to <span>C</span></button>
+                    <button>From <span>C</span> to <span>A</span></button>
+                    <button>From <span>C</span> to <span>B</span></button>
+                </div>
+                <div id="settings">
+                    <button>Restart Game</button>
+                    <button>End Game</button>
+                </div>
+        </div>
+        <div id="rules">
+            <h2>Rules</h2>
+            <ol>
+                <li>Only one disk can be moved at a time.</li>
+                <li>Each move consists of taking the upper disk from one of the boxes and placing it on top of another box or on an empty rod.</li>
+                <li>No larger disk may be placed on top of a smaller disk.</li>
+            </ol>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
