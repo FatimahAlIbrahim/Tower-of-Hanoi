@@ -37,11 +37,31 @@ $(document).ready(function(){
         var action = $(this).text();
         var current = action[5];
         var destination = action[10];
-        var topDisk = $("#box-"+current+" div").first();
-        console.log(topDisk);
-        $("#box-"+current).remove(topDisk);
-        $("#box-"+destination).prepend(topDisk);
-    });
+        var currentTopDisk = $("#box-"+current+" div").first();
 
+        if(currentTopDisk.length == 0){
+            alert("There is nothing to move from "+current);
+        }
+        else{
+            var destinationTopDisk = $("#box-"+destination+" div").first();
+            if(destinationTopDisk.length == 0){
+                $("#box-"+current).remove(currentTopDisk);
+                $("#box-"+destination).prepend(currentTopDisk);
+                var moves = Number($("#number-of-moves").text());
+                $("#number-of-moves").text(++moves);
+            }
+            else{
+                if(currentTopDisk.attr("class") < destinationTopDisk.attr("class")){
+                $("#box-"+current).remove(currentTopDisk);
+                $("#box-"+destination).prepend(currentTopDisk);
+                var moves = Number($("#number-of-moves").text());
+                $("#number-of-moves").text(++moves);
+                }
+                else{
+                    alert("You can't move a bigger disk on top of a smaller one");
+                }
+            }  
+        }
+    });
 
 });

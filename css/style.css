@@ -82,27 +82,33 @@ button {
 }
 
 .disk1 {
-    background-color: rgb(255, 45, 45);
+    background-color: #f44336;
     margin: 0em auto 0em auto;
-    align-items: flex-end;
+    border-radius: 0.5em;
 }
 
 .disk2 {
-    background-color: orange;
+    background-color: #ff9800;
     margin: 0em auto 0em auto;
+    border-radius: 0.5em;
 }
 
 .disk3 {
-    background-color: rgb(224, 224, 41);
+    background-color: #E0E029;
     margin: 0em auto 0em auto;
+    border-radius: 0.5em;
 }
 
 .disk4 {
-    background-color: rgb(23, 197, 23);
+    background-color: #4CAF50;
     margin: 0em auto 0em auto;
+    border-radius: 0.5em;
 }
 
 .disk5 {
-    background-color: rgb(86, 86, 252);
+    background-color: #2196F3;
     margin: 0em auto 0em auto;
+    border-radius: 0.5em;
 }
+
+
