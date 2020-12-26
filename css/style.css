@@ -74,25 +74,31 @@ button {
 }
 
 .selected-mode {
-    background-color: lightgray;
+    background-color: black;
+    color: white;
 }
 
 .disk1 {
-    background-color: red;
+    background-color: rgb(255, 45, 45);
+    margin: auto;
 }
 
 .disk2 {
     background-color: orange;
+    margin: auto;
 }
 
 .disk3 {
-    background-color: yellow;
+    background-color: rgb(224, 224, 41);
+    margin: auto;
 }
 
 .disk4 {
-    background-color: green;
+    background-color: rgb(23, 197, 23);
+    margin: auto;
 }
 
 .disk5 {
-    background-color: blue;
+    background-color: rgb(86, 86, 252);
+    margin: auto;
 }
