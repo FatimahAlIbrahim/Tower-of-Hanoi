@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
     var mode = "3 disks";
+    var timer;
 
     // on click for the game mode selection buttons
     $(".mode").on("click",function(){
@@ -29,7 +30,7 @@ $(document).ready(function(){
         // hide the mode selection area
         $("#mode-selection").hide();
         // show the game to the player
-        $("#in-game").show();
+        $("#in-game").show(null, startTimer());
     });
 
     // on click for the player action buttons
@@ -89,12 +90,45 @@ $(document).ready(function(){
 
     // function to check if the player won
     function checkVictory(){
+        // get the top disk of box A
         var boxA = $("#box-A div").first();
+        // get the top disk of box B
         var boxB = $("#box-B div").first();
+        // check if both box A and B are empty or not
         if(boxA.length == 0 && boxB.length == 0){
-            $("#result").text("Congratulations! You Won!!!");
+            // check the timer to see if it reached 1 minute or not
+            if($("#minutes").text() == "0"){
+                var time = $("#seconds").text()+" seconds!";
+            }
+            else{
+                var time =$("#minutes").text()+":"+$("#seconds").text()+" minutes!";
+            }
+            // get the number of moves the player performed to win
+            var moves = $("#number-of-moves").text()+" moves";
+            // congratulate the player
+            $("#result").text("Congratulations!!! You Won with "+moves+" in "+time);
+            // disable the player action buttons bacause the game ended
             $("#player-moves button").attr("disabled", true);
+            // stop the timer
+            clearInterval(timer);
         }
+    }
+
+    // function to calculate the duration of the game
+    function startTimer(){
+        // start the timer and update it every 1 second
+        timer = setInterval(function(){
+            // get the seconds that bassed and increase it by one
+            var seconds = Number($("#seconds").text());
+            $("#seconds").text(++seconds);
+
+            // if 60 seconds passed, increase the minutes by one and return the seconds to 0
+            if(seconds == 60){
+                var minutes = Number($("#minutes").text());
+                $("#minutes").text(++minutes);
+                $("#seconds").text("0");
+            }
+        }, 1000);
     }
 
 });
