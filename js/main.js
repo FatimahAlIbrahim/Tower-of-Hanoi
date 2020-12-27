@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    // global variables
     var mode = "3 disks";
     var timer;
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
         // hide the mode selection area
         $("#mode-selection").hide();
         // show the game to the player
-        $("#in-game").show(null, startTimer());
+        $("#in-game").show(startTimer());
     });
 
     // on click for the player action buttons
@@ -87,6 +87,39 @@ $(document).ready(function(){
             }  
         }
     });
+
+    // on click for the go back to mode selection button
+    $("#back").on("click", function(){
+        // rereash the page
+        location.reload();
+    });
+
+    // on click for the restart button
+    $("#restart").on("click", function(){
+        $("#box-A div").remove();
+        $("#box-B div").remove();
+        $("#box-C div").remove();
+        $("#number-of-moves").text("0");
+        $("#minutes").text("0");
+        $("#seconds").text("0")
+        $("#player-moves button").attr("disabled", false);
+        clearInterval(timer);
+
+        var diskNumber = Number(mode[0]);
+        // calculate the height for the disks
+        var height = 100 / diskNumber;
+        // for loop for creating the disks
+        for (let index = 1; index <= diskNumber; index++) {
+            // calculate the width for the disk
+            var width = (100 / diskNumber) * index;
+            // append the disk to the first box
+            $("#box-A").append("<div class='disk"+index+"' style='width: "+width+"%; height: "+height+"%' ></div>")
+        }
+        
+        startTimer();
+    });
+
+
 
     // function to check if the player won
     function checkVictory(){
