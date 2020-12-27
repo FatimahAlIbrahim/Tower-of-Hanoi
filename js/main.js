@@ -100,6 +100,7 @@ $(document).ready(function(){
             $("#result").text("Congratulations!!! You Won with "+moves+" in "+time); // congratulate the player
             $("#player-moves button").attr("disabled", true); // disable the player action buttons bacause the game ended
             clearInterval(timer); // stop the timer
+            $("audio")[0].play();
         }
     }
 
