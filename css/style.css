@@ -152,4 +152,8 @@ button{
     border-radius: 1em;
 }
 
+.dialog-title {
+    background-color: red !important;
+    color: white !important;
+}
 

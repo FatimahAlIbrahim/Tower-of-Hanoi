@@ -51,7 +51,8 @@ $("#player-moves button").on("click",function(){
     var currentTopDisk = $("#box-"+current+" div").first(); // get the top disk from the starting box
 
     if(currentTopDisk.length == 0){ // check if the starting box is empty or not
-        alert("There is nothing to move from "+current); // if the starting box is empty, inform the player
+        $("#custom-alert").html("<p>There is nothing to move from "+current+"</p>"); // if the starting box is empty, inform the player
+        $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
     }
     else{
         var destinationTopDisk = $("#box-"+destination+" div").first(); // get the top box from the destination box
@@ -67,11 +68,12 @@ $("#player-moves button").on("click",function(){
                 $("#box-"+current).remove(currentTopDisk); // remove the top disk of the starting box
                 $("#box-"+destination).prepend(currentTopDisk); // add the top box from the starting box to be the top of the destination box
                 var moves = Number($("#number-of-moves").text()); // get the number of moves the player performed before this one
-                 $("#number-of-moves").text(++moves); // increase the number of moves by one
+                $("#number-of-moves").text(++moves); // increase the number of moves by one
                 checkVictory(); // call the function to check if the player won
             }
             else{
-                alert("You can't move a bigger disk on top of a smaller one");  // remind the player of the rule
+                $("#custom-alert").html("<p>You can't move a bigger disk on top of a smaller one</p>"); // remind the player of the rule
+                $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
             }
         }  
     }
