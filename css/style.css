@@ -1,23 +1,47 @@
+body {
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 1.25em;
+}
+
 h1, h2 {
     text-align: center;
     margin-bottom: 1em;
+    color: maroon;
 }
 
 span {
     font-weight: bold;
 }
 
-button {
-    background-color: rgb(250, 250, 250);
+button{
+    background-color: rgb(255, 255, 255);
     border: groove;
     border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#win-condition {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
 #game-container {
+    background-color: rgba(250, 250, 250, 0.7);
     margin: 3em auto 3em auto;
     width: 70%;
     padding: 1em;
-    border: solid lightgray;
+    border: outset lightgray;
+    border-radius: 1em;
+}
+
+#play {
+    background-color: maroon;
+    color: white;
+    padding: 0.20em 1em;
 }
 
 #in-game {
@@ -26,9 +50,8 @@ button {
 
 #mode-selection{
     text-align: center;
-    margin: 4em 0em 4em 0em;
+    margin: 2em 0em 2em 0em;
 }
-
 
 #game {
     border: solid gray;
@@ -58,6 +81,7 @@ button {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   font-weight: 900;
 }
 
 #settings {
@@ -68,12 +92,29 @@ button {
 #rules {
     width: 70%;
     margin: auto;
+    margin-top: 2.5em;
     text-align: center;
     list-style: inside;
+    font-weight: 600;
 }
 
 #rules li {
     text-align: justify;
+}
+
+.A {
+    background-color: #f44336;
+    color: white;
+}
+
+.B {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.C {
+    background-color: #2196F3;
+    color: white;
 }
 
 .selected-mode {
@@ -84,31 +125,31 @@ button {
 .disk1 {
     background-color: #f44336;
     margin: 0em auto 0em auto;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .disk2 {
     background-color: #ff9800;
     margin: 0em auto 0em auto;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .disk3 {
     background-color: #E0E029;
     margin: 0em auto 0em auto;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .disk4 {
     background-color: #4CAF50;
     margin: 0em auto 0em auto;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .disk5 {
     background-color: #2196F3;
     margin: 0em auto 0em auto;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 

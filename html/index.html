@@ -9,12 +9,13 @@
 <body>
     <div id="game-container">
         <h1>Tower of Hanoi</h1>
+        <p id="win-condition"> Move all the disks to box C to win!!!</p>
 
         <div id="mode-selection">
             <span>Game Mode:</span>
             <button class="mode">3 disks</button>
-            <button class="mode">4 Disks</button>
-            <button class="mode">5 Disks</button>
+            <button class="mode">4 disks</button>
+            <button class="mode">5 disks</button>
             <button id="play">Play</button>
         </div>
 
@@ -34,12 +35,12 @@
                 </div>
                 <div id="player-moves">
                     <span>Player Moves:</span>
-                    <button>From A to B</button>
-                    <button>From A to C</button>
-                    <button>From B to A</button>
-                    <button>From B to C</button>
-                    <button>From C to A</button>
-                    <button>From C to B</button>
+                    <button class="A">From A to B</button>
+                    <button class="A">From A to C</button>
+                    <button class="B">From B to A</button>
+                    <button class="B">From B to C</button>
+                    <button class="C">From C to A</button>
+                    <button class="C">From C to B</button>
                 </div>
                 <div id="settings">
                     <button id="restart">Restart Game</button>
