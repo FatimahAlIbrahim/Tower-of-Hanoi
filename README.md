@@ -1,16 +1,20 @@
 # Tower-of-Hanoi
 Tower of Hanoi game using html, CSS, and JavaScript.
 
+## Game introduction
+In the Tower of Hanoi game, you will have 3 boxes and several disks. The goal is to move all the disks to the lask box while following the provided rules.
+
 ## Technologies used
 * Html5
 * CSS
-* jQuery
+* jQuery Core 3.5.1 
+* jQuery UI 1.12.1
 * Git Bash and GitHub
 
 ## Wireframes and user stories
 
 ### Wireframe: 
-![Wireframe](images/Wireframe.JPG)
+![Wireframe](images/Wireframe2.png)
 
 ### User Stories:
 * As a player, I want to know the win condition, so that I have a goal in mind while playing.
@@ -32,10 +36,14 @@ Tower of Hanoi game using html, CSS, and JavaScript.
 1. Added the initial html and CSS code.
 1. Added the jQuery code for the user stories functionalities, one at a time.
 1. Added an audio that will play when the player wins taken from [source](https://youtu.be/1ZsiEPoRCOs?t=3).
+1. Added the final CSS code.
+1. Created a custom alert box using jQuery UI dialog.
 ### Problem-solving strategy
-
+* For syntax problems: search Google.
+* For game logic problem: take time to think about how to implement the desired functionality.
 
 ## Unsolved problems
+There are no Unsolved problems
 
 ## Winner logic
 The player will win when all the disks are in box C. <br>
@@ -79,3 +87,15 @@ $("#player-moves button").on("click",function(){
     }
 });
 ```
+### Function explanation
+This function will be called after the player clicks on any of the player moves buttons: <br>
+1. The function gets the desired move from the clicked button's text and stores it into the variable action.
+1. It will extract the starting and the destination boxes from variable action using string indexes.
+1. It will get the top disk from the starting box.
+1. It will check if the starting box is empty or not using the top disk it got previously.
+    * If it is empty: the function will inform the user of this fact by using the dialog box.
+    * If it is not empty: the function will repeat the checking process with the destination box.
+1. If the destination box is empty: the function will remove the top disk from the starting box and append it to the top (beginning) of the destination box, increase the moves by one, and check if the player one by calling the `checkVictory` function
+1. If the destination box is not empty: the function will compare the top disks of the starting and destination boxes to make sure that the starting box top disk is smaller.
+	* If it is smaller: the function will remove the top disk from the starting box and append it to the top (beginning) of the destination box, increase the moves by one, and check if the player one by calling the `checkVictory` function
+	* If it is not smaller: then the function will not perform the move and inform the user of the violated rule using the dialog box.
