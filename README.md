@@ -2,7 +2,7 @@
 Tower of Hanoi game using html, CSS, and JavaScript.
 
 ## Game introduction
-In the Tower of Hanoi game, you will have 3 boxes and several disks. The goal is to move all the disks to the lask box while following the provided rules.
+In the Tower of Hanoi game, you will have 3 boxes and several disks. The goal is to move all the disks to the last box while following the provided rules.
 
 ## Technologies used
 * Html5
