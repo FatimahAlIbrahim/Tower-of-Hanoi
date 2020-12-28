@@ -16,10 +16,10 @@ span {
 }
 
 button{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(226, 226, 226);
     border: groove;
     border-radius: 0.5em;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -156,4 +156,21 @@ button{
     background-color: red !important;
     color: white !important;
 }
+
+@media screen and (max-width: 800px) {
+    #rules {
+      width: 100%;
+      margin-left: -1em;
+    }
+    #game {
+        padding: 1em 1em 0.5em 1em;
+    }
+    #player-moves {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-weight: 900;
+     }
+  }
 
