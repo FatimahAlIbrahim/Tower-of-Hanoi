@@ -33,7 +33,7 @@ $(document).ready(function(){
 
         if(currentTopDisk.length == 0){ // check if the starting box is empty or not
             $("#custom-alert").html("<p>There is nothing to move from "+current+"</p>"); // if the starting box is empty, inform the player
-            $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
+            $("#custom-alert").dialog({width:'auto' , classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
         }
         else{
             var destinationTopDisk = $("#box-"+destination+" div").first(); // get the top box from the destination box
@@ -54,7 +54,7 @@ $(document).ready(function(){
                 }
                 else{
                     $("#custom-alert").html("<p>You can't move a bigger disk on top of a smaller one</p>"); // remind the player of the rule
-                    $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
+                    $("#custom-alert").dialog({width:'auto' , classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
                 }
             }  
         }

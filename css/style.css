@@ -172,5 +172,8 @@ button{
         flex-wrap: wrap;
         font-weight: 900;
      }
+     #game-container {
+        margin: 1em auto 1em auto;
+        width: 80%;}
   }
 

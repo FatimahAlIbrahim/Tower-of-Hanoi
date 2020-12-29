@@ -43,7 +43,7 @@ In the Tower of Hanoi game, you will have 3 boxes and several disks. The goal is
 * For game logic problem: take time to think about how to implement the desired functionality.
 
 ## Unsolved problems
-There are no Unsolved problems
+There are no unsolved problems
 
 ## Winner logic
 The player will win when all the disks are in box C. <br>
@@ -60,7 +60,7 @@ $("#player-moves button").on("click",function(){
 
     if(currentTopDisk.length == 0){ // check if the starting box is empty or not
         $("#custom-alert").html("<p>There is nothing to move from "+current+"</p>"); // if the starting box is empty, inform the player
-        $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
+        $("#custom-alert").dialog({width:'auto' , classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
     }
     else{
         var destinationTopDisk = $("#box-"+destination+" div").first(); // get the top box from the destination box
@@ -81,7 +81,7 @@ $("#player-moves button").on("click",function(){
             }
             else{
                 $("#custom-alert").html("<p>You can't move a bigger disk on top of a smaller one</p>"); // remind the player of the rule
-                $("#custom-alert").dialog({classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
+                $("#custom-alert").dialog({width:'auto' , classes: {"ui-dialog-titlebar": "dialog-title"}}); //open the dialog with "dialog-title" class for the title
             }
         }  
     }
