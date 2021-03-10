@@ -1,6 +1,9 @@
 # Tower-of-Hanoi
-Tower of Hanoi game using html, CSS, and JavaScript.
-[Link to the game in GitHub pages.](https://pages.git.generalassemb.ly/fatimah-al-ibrahim/Tower-of-Hanoi/)
+Tower of Hanoi game using html, CSS, and JavaScript. 
+
+Developed for Project 1 in Java Developer immersive course by GA and Misk Academy
+
+[Link to the game in GitHub pages.](https://fatimahalibrahim.github.io/Tower-of-Hanoi/)
 
 ## Game introduction
 In the Tower of Hanoi game, you will have 3 boxes and several disks. The goal is to move all the disks to the last box while following the provided rules.
