@@ -3,6 +3,9 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-size: 1.25em;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 h1, h2 {
@@ -100,6 +103,26 @@ button{
 
 #rules li {
     text-align: justify;
+}
+
+#footer {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(192, 192, 192);;
+    color: black;
+    text-align: center;
+}
+
+#footer div {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.25%;
+    font-size: .80em;
+    font-weight: 600;
+}
+
+#footer a {
+    margin-left: 2px;
 }
 
 .A {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>Tower of Hanoi</title>
 </head>
+
 <body>
     <div id="game-container">
         <h1>Tower of Hanoi</h1>
@@ -25,44 +27,58 @@
         </h2>
 
         <div id="in-game">
-                <p>Number of Moves: <span id="number-of-moves">0</span> Timer: <span id="minutes">0</span>:<span id="seconds">0</span></p>
-                <div id = "game">
-                    <div id = "box-A"></div>
-                    <div id = "box-B"></div>
-                    <div id = "box-C"></div>
-                    <p>A</p>
-                    <p>B</p>
-                    <p>C</p>
-                </div>
-                <div id="player-moves">
-                    <span>Player Moves:</span>
-                    <button class="A">From A to B</button>
-                    <button class="A">From A to C</button>
-                    <button class="B">From B to A</button>
-                    <button class="B">From B to C</button>
-                    <button class="C">From C to A</button>
-                    <button class="C">From C to B</button>
-                </div>
-                <div id="settings">
-                    <button id="restart">Restart Game</button>
-                    <button id="back">Go back to mode selection</button>
-                </div>
+            <p>Number of Moves: <span id="number-of-moves">0</span> Timer: <span id="minutes">0</span>:<span
+                    id="seconds">0</span></p>
+            <div id="game">
+                <div id="box-A"></div>
+                <div id="box-B"></div>
+                <div id="box-C"></div>
+                <p>A</p>
+                <p>B</p>
+                <p>C</p>
+            </div>
+            <div id="player-moves">
+                <span>Player Moves:</span>
+                <button class="A">From A to B</button>
+                <button class="A">From A to C</button>
+                <button class="B">From B to A</button>
+                <button class="B">From B to C</button>
+                <button class="C">From C to A</button>
+                <button class="C">From C to B</button>
+            </div>
+            <div id="settings">
+                <button id="restart">Restart Game</button>
+                <button id="back">Go back to mode selection</button>
+            </div>
         </div>
         <div id="rules">
             <h2>Rules</h2>
             <ol>
                 <li>Only one disk can be moved at a time.</li>
-                <li>Each move consists of taking the upper disk from one of the boxes and placing it on top of another box or on an empty box.</li>
+                <li>Each move consists of taking the upper disk from one of the boxes and placing it on top of another
+                    box or on an empty box.</li>
                 <li>No larger disk may be placed on top of a smaller disk.</li>
             </ol>
         </div>
         <audio src="audio/victory.mp3" type="audio/mpeg"></audio>
         <div id="custom-alert" title="Illigal Move">
         </div>
+
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <div id="footer">
+        <div>
+            Made By Fatimah Al Ibrahim
+            <a href="https://github.com/FatimahAlIbrahim"><img src="images/github.png" width="20px" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/fatimah-al-ibrahim/"><img src="images/linkedin.png" width="20px"
+                    alt="LinkedIn"></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
